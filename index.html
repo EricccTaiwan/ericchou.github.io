@@ -1,10 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>你好，GitHub</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Eric Chou" />
+    <meta name="description" content="This page is built by Eric Chou" />
+    <link rel="shortcut icon" href="周呈陽.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Eric Chou</title>
   </head>
   <body>
-    <h1>覺得厲害</h1>
+    <header>
+      <h1>周呈陽 (Eric Chou)</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm Eric Chou, a graduate student in the Department of Computer and Communication Engineering at National Cheng Kung University. My research interests include IRS, B5G/6G, and vehicular networks.
+        </p>
+        <ul>
+          <li><strong>Education:</strong> BS in Systems and Naval Mechatronic Engineering from National Cheng Kung University, currently pursuing an MS in Computer and Communication Engineering</li>
+          <li><strong>Research:</strong> Member of the Wireless Communications and Networking Lab under the supervision of Dr. Chih-Wen Chang</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <p>
+          Check out some of my recent projects!
+        </p>
+        <ul>
+          <li>
+            <h3>Project 1</h3>
+            <p>
+              Description of project 1.
+            </p>
+          </li>
+          <li>
+            <h3>Project 2</h3>
+            <p>
+              Description of project 2.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <p>
+          Feel free to reach out to me with any questions or opportunities!
+        </p>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Eric Chou</p>
+    </footer>
   </body>
 </html>
