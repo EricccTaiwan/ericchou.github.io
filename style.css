@@ -100,7 +100,7 @@ section li h3 {
 }
 
 img {
-  width: 50%; /* 将图片宽度设置为原来的50% */
+  width: 70%; /* 将图片宽度设置为原来的50% */
   display: block; /* 设置图片为块级元素 */
   margin: 0 auto; /* 将图片水平居中 */
 }
