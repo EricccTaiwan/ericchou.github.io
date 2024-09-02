@@ -28,24 +28,20 @@
     </header>
 
     <main>
-      <section id="intro">
+      <section id = "intro">
         <h2>Introduction</h2>
         <p>Hi there, I'm <strong>Eric Chou.</strong>
           <br>
           <br>
           I'm a student of <strong><span style = "color:red;" >Inst. of Computer and Communication Engineering (CCE)</span></strong> 
-          at NCKU (成大電通所 通訊組).
+          at NCKU (成大電通所 通訊系統組).
           <br>
           Also, I achieved <strong>a perfect GPA of 4.3 out of 4.3</strong> in my first semester. <a href = "eric/transcript.pdf">(transcript)</a>
           <br>
-          <br>
-          <strong>I'm actively seeking <span style="color: red;">A Summer Internship in 2024 !</span></strong>
-          <br>
-          Please feel free to reach out to me at the <a href = "#contact">contact information </a>below for any opportunities or further discussion.
         </p>
       </section>
       
-      <section id="education">
+      <section id = "education">
         <strong>Education:</strong>
         <blockquote>MS : Inst. of Computer and Communication Engineering, NCKU, <i>Sept,2023 ~ Now.</i></blockquote>
         <blockquote>BS : Dept. of Systems and Naval Mechatronic Engineering, NCKU, <i>Sept,2019 ~ June,2023.</i></blockquote>
@@ -60,14 +56,13 @@
 
         <strong>Laboratory:</strong><br>
         <blockquote> Wireless Communication and Network Lab (<a href="https://www.ee.ncku.edu.tw/teacher/index2.php?teacher_id=57">WCN Lab</a>)</blockquote>
-        <blockquote> Advisor : Prof. Wenson Chang </blockquote>
+        <blockquote> Advisor : Prof. Wenson Chang, 張志文教授 </blockquote>
 
         <strong>TA: </strong>
         <blockquote>112-2 : Optimization Algorithms, CCE</blockquote>
-        <blockquote>113-1 : Digital Signal Processing, CCE</blockquote>
       </section>
       
-      <section id="skills">
+      <section id = "skills">
         <h2>Programming</h2>
         <p>Familiar with : <strong>C/C++, Python, MATLAB.</strong> </p>
         <p>
@@ -76,7 +71,41 @@
         </p>
       </section>
 
-      <section id="projects">
+      <section id = "internship">
+        <h2>Internship @ Realtek, <i>July 2024 - August 2024</i></h2>
+        <p>
+          The original <b>firmware only supported reading files in the root directory</b> of USB drives formatted with FAT32. <br>
+          However, LG required the addition of functionality to <b>read files under first-level subdirectories</b>.
+        </p>
+        <h3>Contributions (C language)</h3>
+        <ul>
+          <li>
+            <p>
+              Implemented support for reading files under first-level subdirectories of the root directory in both FAT32 and exFAT formats, with a shared switch case for both formats.
+            </p>
+          </li>
+          <li>
+            <p>
+              Managed access to first-level subdirectories and exFAT support via Macros:
+              <ul>
+                <li>
+                  # _USB2_HOST_FILE_SYSTEM_FAT32_SUPPORT
+                </li>
+                <li>
+                  # _USB2_HOST_FW_OPEN_FOLDER_SUPPORT
+                </li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <p>
+              Successfully verified functionality with 8 different USB drives, confirming that both exFAT and FAT32 work correctly on the KCPU.
+            </p>
+          </li>
+        </ul>
+      </section>
+      
+      <section id = "projects">
         <h2>Projects</h2>
         <p>
           Check out some of my recent projects!
@@ -132,7 +161,7 @@
         </ul>
       </section>
       
-      <section id="awards">
+      <section id = "awards">
         <h2>Awards <a href = "eric/awards.pdf">(pdf)</a></h2>
           <ul>
             <h4>
@@ -160,7 +189,7 @@
         </li>
       </section>
       
-      <section id="contact">
+      <section id = "contact">
         <h2>Contact</h2>
         <p>
           Feel free to reach out to me!
