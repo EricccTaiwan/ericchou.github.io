@@ -20,8 +20,7 @@
       <nav>
         <ul>
           <li><a href="eric/Eric_CV.pdf" >CV</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#awards">Awards</a></li>
+          <li><a href="eric/transcript.pdf" >Transcript</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -33,11 +32,9 @@
         <p>Hi there, I'm <strong>Eric Chou.</strong>
           <br>
           <br>
-          I'm a student of <strong><span style = "color:red;" >Inst. of Computer and Communication Engineering (CCE)</span></strong> 
-          at NCKU (成大電通所 通訊系統組).
+          I'm a student of <strong><span style = "color:red;" >Inst. of Computer and Communication Engineering </span></strong> at <strong>National Cheng Kung University</strong>.
           <br>
-          Also, I achieved <strong>a perfect GPA of 4.3 out of 4.3</strong> in my first semester. <a href = "eric/transcript.pdf">(transcript)</a>
-          <br>
+          And I'm looking for a <strong>semester intership</strong>.
         </p>
       </section>
       
@@ -48,18 +45,16 @@
 
         <strong>Research Interests:</strong><br> 
         <blockquote>
-          <li>Communication System, 通訊系統</li>
-          <li>Convex Optimization, 凸優化 </li>
-          <li>UAV Communication, 無人機通訊   </li>
-          <li>Beamforming, 波束成型 </li>
+          Thesis: "Maximizing Tasks Offloading and Local Computing for the Multi-UAV-Enabled MEC system"
+          <li>Communication System</li>
+          <li>Convex Optimization </li>
+          <li>UAV Communication   </li>
         </blockquote>
 
         <strong>Laboratory:</strong><br>
         <blockquote> Wireless Communication and Network Lab (<a href="https://www.ee.ncku.edu.tw/teacher/index2.php?teacher_id=57">WCN Lab</a>)</blockquote>
         <blockquote> Advisor : Prof. Wenson Chang, 張志文教授 </blockquote>
 
-        <strong>TA: </strong>
-        <blockquote>112-2 : Optimization Algorithms, CCE</blockquote>
       </section>
       
       <section id = "skills">
@@ -72,92 +67,84 @@
       </section>
 
       <section id = "internship">
-        <h2>Internship @ Realtek, <i>July 2024 - August 2024</i></h2>
+        <h2>USB Firmware Intern @ Realtek, <i>July 2024 - August 2024</i></h2>
         <p>
           The original <b>firmware only supported reading files in the root directory</b> of USB drives formatted with FAT32. <br>
           However, LG required the addition of functionality to <b>read files under first-level subdirectories</b>.
         </p>
-        <h3>Contributions (C language)</h3>
         <ul>
-          <li>
-            <p>
-              Implemented support for reading files under first-level subdirectories of the root directory in both FAT32 and exFAT formats, with a shared switch case for both formats.
-            </p>
-          </li>
-          <li>
-            <p>
-              Managed access to first-level subdirectories and exFAT support via Macros:
-              <ul>
-                <li>
-                  # _USB2_HOST_FILE_SYSTEM_FAT32_SUPPORT
-                </li>
-                <li>
-                  # _USB2_HOST_FW_OPEN_FOLDER_SUPPORT
-                </li>
-              </ul>
-            </p>
-          </li>
-          <li>
-            <p>
-              Successfully verified functionality with 8 different USB drives, confirming that both exFAT and FAT32 work correctly on the KCPU.
-            </p>
-          </li>
+          <li><p> <b>Tools:</b> C programming, GDB and Git.
+            </li></p>
+          <li><p>Added support for reading files in the root directory or first-level subdirectories for FAT32 and exFAT, utilizing shared switch cases and macros for format handling and directory access.
+            </p></li>
+          <li><p>Successfully verified the functionality using 8 different USB drives, varying in cluster size, multiple partitions, and macros, confirming that both exFAT and FAT32 operate correctly on the KCPU.
+            </p></li>
         </ul>
       </section>
       
       <section id = "projects">
         <h2>Projects</h2>
         <p>
-          Check out some of my recent projects!
         </p>
         <ul>
           <li>
-            <h3>Designing and Manufacturing of Intellectually Unmanned Ship</h3>
-            <p>
-              Developing real-time image recognition and sound source localization algorithms 
-              with the Raspberry Pi involved addressing obstacles such as environmental noise 
-              interference, camera instability due to water surfacemovements, and efficient 
-              communication with the control system. 
-            </p>
-            <p>
-              Additional complexities arose from signal 
-              delaysbetween various development boards, including Raspberry Pi and Arduino. 
-              A significant component of the project also involved integrating Arduino for precise ship control.
-            </p>
+            <h3>Designing and Manufacturing of Intellectually Unmanned Ship </h3>
+            <ul>
+              <li><p><b>Tools:</b> C programming, Python, Raspberry Pi, and Arduino.
+                </li></p>
+              <li><p>Resolved challenges such as environmental noise, camera instability due to water surface movements, efficient communication between Raspberry Pi and the control system, and signal delays between Raspberry Pi and Ar-duino.
+                </p></li>
+              <li><p>Integrated Arduino for precise ship control and coordinated the operation of multiple development boards.
+              </p></li>
+            </ul>
           </li>
-          <li>
-            <h3>Audio Classification by ResNet50 (<a href="https://github.com/EricccTaiwan/NCKU-CVDL_2021/tree/main/NCKU-CVDL_2021-Final_Project">code</a>)</h3>
-            <p>
-              Transforming audio data into frequency-based images for classification, 
-              where similar frequencies could lead to failed classifications due to 
-              lack of distinct features or noise in the audio.
-            </p>
-            <p>
-              Reaching an 80% accuracy in audio classification by refining its CNN model to ResNet18, 
-              effectively leveraging frequency ranges.
-            </p>
-          </li>
+
           <li>
             <h3>
-              A tracking and obstacle avoidance vehicle 
-              with Arduino (<a href="https://github.com/EricccTaiwan/Arduino_Microcomputer_Contorl_COURSE">code</a>)
+              A tracking and obstacle avoidance vehicle (<a href="https://github.com/EricccTaiwan/Arduino_Microcomputer_Contorl_COURSE">code</a>)
             </h3>
-            <p>
-              Designed an Arduino-controlled vehicle to tackle navigation issues. 
-              Improved sensor accuracy and motor re-sponse, and refined navigation programming 
-              through iterative testing for effective course completion.
-            </p>
+            <ul>
+              <li><p><b>Tools:</b> C programming and Arduino.
+                </li></p>
+              <li><p>Designed an Arduino-controlled vehicle to tackle navigation issues. Improved sensor accuracy, motor response, and refined navigation programming through iterative testing for effective course completion.
+                </p></li>
+            </ul>
           </li>
+
           <li>
-            <h3>Learning Python in 30 days as a beginner <a href = 'https://ithelp.ithome.com.tw/users/20140755/ironman/4877'>(link)</a></h3>
+            <h3>Seminar reminder LINE BOT</h3>
+            <ul>
+              <li><p><b>Tools:</b> Python, Heroku and Git.
+                </li></p>
+              <li><p>Providing keyword reminders, submission of seminar reflections, and other functions.
+                </p></li>
+            </ul>
+
           </li>
+
           <li>
-            <h3>Full solution to "INTRODUCTION TO FOURIER TRANSFORMS FOR IMAGE PROCESSING"  
-            <a href = 'https://medium.com/@yphbchou0911/影像處理-傅立葉轉換-b8c6e886bf9b'>(link)</a></h3>
+            <h3>Audio Classification by ResNet50 (<a href="https://github.com/EricccTaiwan/NCKU-CVDL_2021/tree/main/NCKU-CVDL_2021-Final_Project">code</a>)</h3>
+            <ul>
+              <li><p><b>Tools:</b> Python.
+                </li></p>
+              <li><p>Refined the CNN model to ResNet18 for audio classification, transforming audio data into frequency-based images, achieving 80% accuracy despite challenges with similar frequencies and noise.
+                </p></li>
+            </ul>
           </li>
+          
           <li>
-            <h3>Updating . . .</h3>
+            <h3>Solution to "Introduction to Fourier Transforms for Image Processing" <a href = 'https://medium.com/@yphbchou0911/影像處理-傅立葉轉換-b8c6e886bf9b'>(link)</a></h3>
+            <ul>
+              <li><p><b>Tools:</b> MATLAB.
+              </li></p>
+            </ul>
           </li>
+
+          
+          <li>
+            <h3>Python learning articles <a href = 'https://ithelp.ithome.com.tw/users/20140755/ironman/4877'>(link)</a></h3>
+          </li>
+
         </ul>
       </section>
       
